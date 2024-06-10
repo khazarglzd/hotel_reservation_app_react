@@ -1,9 +1,7 @@
 import React from 'react'
 
-const TestimonialPage = () => {
+export default function TestimonialPage() {
     return (
         <div>TestimonialPage</div>
     )
 }
-
-export default TestimonialPage
