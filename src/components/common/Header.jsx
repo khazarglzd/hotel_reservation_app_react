@@ -27,8 +27,8 @@ export default function Header() {
                             <h1 className="m-0 text-primary text-uppercase">Hottels</h1>
                         </Link>
                     </div>
-                    <div className="col-lg-9">
-                        <nav className="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0">
+                    <div className="col-lg-8">
+                        <nav className="navbar navbar-expand-lg bg-dark navbar-dark p-lg-0">
                             <Link to="/" className="navbar-brand d-block d-lg-none">
                                 <h1 className="m-0 text-primary text-uppercase">Hottels</h1>
                             </Link>
@@ -42,8 +42,8 @@ export default function Header() {
                             <div
                                 className={
                                     navbarCollapse
-                                        ? "navbar-collapse justify-content-around navbarCollapse"
-                                        : "collapse navbar-collapse justify-content-around"
+                                        ? "navbar-collapse navbarCollapse justify-content-end"
+                                        : "collapse navbar-collapse justify-content-end "
                                 }
                             >
                                 <div className="navbar-nav mr-auto py-0">
