@@ -5,6 +5,20 @@ import "slick-carousel/slick/slick-theme.css";
 import { carouselData } from "../data/Data";
 
 export default function Carousel() {
+    const sliderRef = useRef(null);
+
+    const next = () => {
+        if (sliderRef.current) {
+            sliderRef.current.slickNext();
+        }
+    };
+
+    const previous = () => {
+        if (sliderRef.current) {
+            sliderRef.current.slickPrev();
+        }
+    };
+
     const settings = {
         dots: false,
         infinite: true,
@@ -16,10 +30,12 @@ export default function Carousel() {
         <>
             <div className="container-fluid p-0 mb-5">
                 <div
+                    id="header-carousel"
                     className="carousel slide"
+                    data-bs-ride="carousel"
                 >
                     <div className="carousel-inner">
-                        <Slider {...settings}>
+                        <Slider ref={sliderRef} {...settings}>
                             {carouselData.map((val, index) => (
                                 <div className="carousel-item" key={index}>
                                     <img className="w-100" src={val.img} alt="Image" />
@@ -49,6 +65,28 @@ export default function Carousel() {
                             ))}
                         </Slider>
                     </div>
+                    <button
+                        className="carousel-control-prev"
+                        type="button"
+                        onClick={previous}
+                    >
+                        <span
+                            className="carousel-control-prev-icon"
+                            aria-hidden="true"
+                        ></span>
+                        <span className="visually-hidden">Previous</span>
+                    </button>
+                    <button
+                        className="carousel-control-next"
+                        type="button"
+                        onClick={next}
+                    >
+                        <span
+                            className="carousel-control-next-icon"
+                            aria-hidden="true"
+                        ></span>
+                        <span className="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
         </>
