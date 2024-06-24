@@ -4,6 +4,7 @@ import Carousel from "./Carousel"
 import About from './About'
 import Rooms from './Rooms'
 import Service from "./Service"
+import Slider from "./Slider"
 
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
             <About />
             <Rooms />
             <Service />
+            <Slider />
         </div>
     )
 }
