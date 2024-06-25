@@ -150,7 +150,7 @@ export const team = [
         designation: "Designation",
     },
     {
-        image: "../assets/img/team-3.jpg",
+        image: "../assets/img/team-4.jpg",
         name: "Full Name",
         designation: "Designation",
     },
