@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
 import { footerContact, footerItem, socialIcons } from "../data/Data";
+import Newsletter from "../home/Newsletter";
 
 export default function Footer() {
     return (
         <>
+            <Newsletter />
             <div
                 className="container-fluid bg-dark text-light footer wow fadeIn"
                 data-wow-delay="0.1s"
@@ -13,7 +15,7 @@ export default function Footer() {
                         <div className="col-md-6 col-lg-4">
                             <div className="bg-primary rounded p-4">
                                 <Link to="/">
-                                    <h1 className="text-white text-uppercase mb-3">Hotelier</h1>
+                                    <h1 className="text-white text-uppercase mb-3">HOTTELS</h1>
                                 </Link>
                                 <p className="text-white mb-0">
                                     Build a professional website for your hotel business and grab
@@ -30,13 +32,6 @@ export default function Footer() {
                                     {val.icon} {val.name}
                                 </p>
                             ))}
-                            <div className="d-flex pt-2">
-                                {socialIcons.slice(0, 4).map((val, index) => (
-                                    <a className="btn btn-outline-light btn-social" href="">
-                                        {val.icon}
-                                    </a>
-                                ))}
-                            </div>
                         </div>
                         <div className="col-lg-5 col-md-12">
                             <div className="row gy-5 g-4">
