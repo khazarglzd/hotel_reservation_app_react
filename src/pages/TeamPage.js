@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import Heading from "../components/common/Heading";
+import Teams from "../components/home/Team";
 
-const Teampage = () => {
+export default function Team() {
     return (
-        <div>Teampage</div>
-    )
+        <>
+            <Heading heading="Team" title="Home" subtitle="Team" />
+            <Teams />
+        </>
+    );
 }
-
-export default Teampage

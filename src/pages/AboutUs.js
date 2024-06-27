@@ -1,11 +1,14 @@
-import React from 'react'
+import React from "react";
+import Heading from "../components/common/Heading";
+import About from "../components/home/About";
+import Team from "../components/home/Team";
 
-const AboutUs = () => {
+export default function AboutUs() {
     return (
-        <div>
-            <h1> ABOUT US</h1>
-        </div>
-    )
+        <>
+            <Heading heading="About" title="Home" subtitle="About" />
+            <About />
+            <Team />
+        </>
+    );
 }
-
-export default AboutUs

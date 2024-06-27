@@ -1,7 +1,10 @@
-import React from 'react'
+import React from "react";
+import Heading from "../components/common/Heading";
 
-export default function BookingPage() {
+export default function Booking() {
     return (
-        <div>BookingPage</div>
-    )
+        <>
+            <Heading heading="Booking" title="Home" subtitle="Booking" />
+        </>
+    );
 }

@@ -11,9 +11,9 @@ export default function Newsletter() {
                             <div className="bg-white rounded text-center p-5">
                                 <h4 className="mb-4">
                                     Subscribe Our
-                                    <span className="text-primary text-uppercase">
+                                    <p className="text-primary text-uppercase">
                                         Newsletter
-                                    </span>
+                                    </p>
                                 </h4>
                                 <div
                                     className="position-relative mx-auto"

@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import Heading from "../components/common/Heading";
+import Services from "../components/home/Service";
+import Sliders from "../components/home/Slider";
 
-const ServicesPage = () => {
+export default function Service() {
     return (
-        <div>ServicesPage</div>
-    )
+        <>
+            <Heading heading="Services" title="Home" subtitle="Services" />
+            <Services />
+            <Sliders />
+        </>
+    );
 }
-
-export default ServicesPage

@@ -1,7 +1,12 @@
-import React from 'react'
+import React from "react";
+import Heading from "../components/common/Heading";
+import Sliders from "../components/home/Slider";
 
-export default function TestimonialPage() {
+export default function Testimonial() {
     return (
-        <div>TestimonialPage</div>
-    )
+        <>
+            <Heading heading="Testimonial" title="Home" subtitle="Testimonial" />
+            <Sliders />
+        </>
+    );
 }
